@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AITU DAO Governance dApp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero card">
+      <div>
+        <p class="eyebrow">Assignment 4</p>
+        <h1>AITU DAO Governance</h1>
+        <p class="muted">Connect MetaMask, inspect voting power, delegate votes, view proposals and cast votes.</p>
+      </div>
+      <button id="connectBtn">Connect wallet</button>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Wallet</h2>
+        <dl class="facts">
+          <dt>Account</dt><dd id="account">Not connected</dd>
+          <dt>Token balance</dt><dd id="balance">-</dd>
+          <dt>Voting power</dt><dd id="votingPower">-</dd>
+          <dt>Delegate</dt><dd id="delegate">-</dd>
+        </dl>
+      </div>
+
+      <div class="card">
+        <h2>Delegate votes</h2>
+        <label for="delegateInput">Delegate address</label>
+        <input id="delegateInput" placeholder="0x... or leave empty for yourself" />
+        <button id="delegateBtn">Delegate</button>
+        <p class="muted small">Delegation is required before tokens become voting power.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <div>
+          <h2>Proposals</h2>
+          <p class="muted">The app reads ProposalCreated events from the Governor contract and then checks state and vote totals on-chain.</p>
+        </div>
+        <button id="refreshProposalsBtn">Refresh proposals</button>
+      </div>
+      <div id="proposalList" class="proposal-list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Transaction log</h2>
+      <pre id="log"></pre>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

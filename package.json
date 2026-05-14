@@ -1,0 +1,29 @@
+{
+  "name": "aitu-dao-governance",
+  "version": "1.0.0",
+  "description": "Assignment 4 - DAO & On-chain Governance System using Hardhat, OpenZeppelin Governor, ERC20Votes and TimelockController.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "coverage": "solidity-coverage",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "demo:local": "hardhat run scripts/demo-local-lifecycle.js --network localhost",
+    "slither": "slither . --config-file slither.config.json",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "frontend": "cd frontend && npx http-server -p 8080"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "4.9.6",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.26.0",
+    "solidity-coverage": "^0.8.14",
+    "solhint": "^5.0.5"
+  }
+}

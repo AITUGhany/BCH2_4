@@ -1,0 +1,13 @@
+@"
+node_modules/
+cache/
+artifacts/
+.env
+.env.*
+!.env.example
+coverage/
+coverage.json
+typechain-types/
+.DS_Store
+npm-debug.log*
+"@ | Set-Content .gitignore -Encoding UTF8

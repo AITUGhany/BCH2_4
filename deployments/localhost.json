@@ -1,0 +1,23 @@
+{
+  "network": "localhost",
+  "chainId": 31337,
+  "deployedAt": "2026-05-14T08:55:25.842Z",
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "teamBeneficiary": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "communityAirdrop": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+  "liquidity": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+  "demoRecipient": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+  "minDelaySeconds": 172800,
+  "votingDelayBlocks": 7200,
+  "votingPeriodBlocks": 50400,
+  "proposalThreshold": "10000000000000000000000",
+  "quorumNumerator": 4,
+  "contracts": {
+    "GovernanceToken": "0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f",
+    "TokenVesting": "0x763e69d24a03c0c8B256e470D9fE9e0753504D07",
+    "TimelockController": "0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1",
+    "MyGovernor": "0x4A679253410272dd5232B3Ff7cF5dbB88f295319",
+    "Treasury": "0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44",
+    "Box": "0x7a2088a1bFc9d81c55368AE168C2C02570cB814F"
+  }
+}
