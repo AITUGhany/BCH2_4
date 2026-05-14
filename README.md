@@ -54,14 +54,6 @@ npx http-server -p 8080
 
 Open `http://localhost:8080`, connect MetaMask to Localhost 8545, and import one of the Hardhat private keys from the local node output.
 
-## Sepolia deployment
-
-Create `.env` from `.env.example`:
-
-```bash
-cp .env.example .env
-```
-
 Fill these values:
 
 ```env
@@ -85,8 +77,3 @@ pip install slither-analyzer
 slither . --config-file slither.config.json
 ```
 
-Copy the raw terminal output into `docs/slither-output.md` before final submission.
-
-## Final ZIP checklist
-
-Before uploading to LMS, delete `node_modules/`, `artifacts/`, `cache/`, `.env`, and any private keys. Keep source code, tests, docs, screenshots, deployment JSON and verified links.
