@@ -1,4 +1,4 @@
-# Assignment 4 — DAO & On-chain Governance System
+# Assignment 4
 
 This is a complete Hardhat project for the Blockchain Technologies 2 Assignment 4: governance token, vesting, Governor, Timelock, Treasury, controlled Box contract, frontend, tests, deployment scripts, audit notes, research document and demo instructions.
 
